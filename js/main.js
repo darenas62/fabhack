@@ -198,10 +198,10 @@ function init() {
 	        zoom: 19,
 	        center: myLatLng,
 	        disableDefaultUI: true,
-	        scrollwheel: false,
+	        scrollwheel: true,
 	        navigationControl: true,
-	        mapTypeControl: false,
-	        scaleControl: false,
+	        mapTypeControl: true,
+	        scaleControl: true,
 	        draggable: true,
 
         // How you would like to style the map. 

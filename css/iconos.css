@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?j9gbxa');
+  src:  url('../fonts/icomoon.eot?j9gbxa#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?j9gbxa') format('truetype'),
+    url('../fonts/icomoon.woff?j9gbxa') format('woff'),
+    url('../fonts/icomoon.svg?j9gbxa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuerca:before {
+  content: "\e903";
+}
+.icon-libro:before {
+  content: "\e901";
+}
+.icon-medico:before {
+  content: "\e902";
+}
+.icon-estomago:before {
+  content: "\e900";
+}
+
