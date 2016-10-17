@@ -849,7 +849,7 @@ ul.external li a:hover {
 }
 
 .price-table .value {
-    background-color: #f8f8f8;
+    background-color: #009EE3;
     color: #727272;
     padding: 20px 0;
 
@@ -895,6 +895,7 @@ ul.external li a:hover {
     border-top: 1px solid #e3e3e3;
     display: block;
     padding: 25px 0;
+    background-color: #009EE3;
 
     -webkit-transition: all 0.7s ease 0s;
        -moz-transition: all 0.7s ease 0s;
@@ -916,6 +917,7 @@ ul.external li a:hover {
 .price-table.featured ul li:last-child a,
 .price-table ul li:last-child:hover a {
     color: #fff;
+    background-color: #009EE3;
 }
 
 
@@ -973,6 +975,12 @@ ul.external li a:hover {
 /*=================================================================
 	Contact
 ==================================================================*/
+
+    #contact {
+    background-image: url(../img/fondoo.png);
+    padding: 0;
+    color: #fff;
+    }
 
 .input-field {
     margin-bottom: 10px;
@@ -1045,13 +1053,13 @@ textarea.form-control {
 ==============================================================*/
 
 #footer {
-    background-color: #2E2E2E;
+    background-color: #FFFFFF;
     padding: 70px 0;
     color: #fff;
 }
 
 .footer-content {
-    width: 390px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -1463,6 +1471,7 @@ textarea.form-control {
     .price-table {
         margin-bottom: 50px;
     }
+
 
 /* contact form */
     .contact-form {
