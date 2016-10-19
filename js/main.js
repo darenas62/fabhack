@@ -133,6 +133,7 @@ $(document).ready(function(){
 		slideSpeed : 700,
 		paginationSpeed : 400,
 		singleItem:true,
+        autoplay : true,
 		navigationText: ["<i class='fa fa-angle-left fa-lg'></i>","<i class='fa fa-angle-right fa-lg'></i>"]
 	});
 	
@@ -198,7 +199,7 @@ function init() {
 	        zoom: 19,
 	        center: myLatLng,
 	        disableDefaultUI: true,
-	        scrollwheel: true,
+	        scrollwheel: false,
 	        navigationControl: true,
 	        mapTypeControl: true,
 	        scaleControl: true,

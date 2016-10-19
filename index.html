@@ -140,7 +140,7 @@
                             <div class="caption-content">
                             	<span><img src="img/slider/logo.png" class="col-md-6" style="width: 25%; height: 25%; position: relative; left:12%">
                                 <h2 class="col-md-6" style="position: relative;left:12%;padding-top:10%;">Ven a hackear esta enfermedad con nosotros</h2>
-                                <a href="#contact" class="btn btn-blue btn-effect" style="position: relative; right: 27%; padding-top:30%;">Inscríbete ahora</a>
+                                <a href="#contact" class="btn btn-blue btn-effect" style="position: relative; right: 27%; padding-top:2%; margin-top: 25%;">Inscríbete ahora</a>
                             </div>
                         </div>
 
@@ -413,6 +413,13 @@
 							<div class="container">
 							<div class="row">
 								<div class="input-field col-md-6">
+									<input type="hidden" name="Date/Time Submitted" id="Date/Time Submitted"/> 
+									<!-- Fecha del envio-->
+								</div>
+								<div class="input-field col-md-6">
+									<input type="hidden" name="Hora" id="Hora"/> 
+								</div>
+								<div class="input-field col-md-6">
 									<label for="nombre">Nombre</label>
 									<input type="text" id="Nombre" name="Nombre" class="form-control">
 								</div>
@@ -460,7 +467,7 @@
 									</div>
 								</div>
 								<div class="col-md-4"></div>
-								<button type="submit" class="btn btn-blue btn-effect col-md-2">Enviar</button>
+								<button type="submit" class="btn btn-blue btn-effect col-md-4">Enviar</button>
 						       	</div>
 						       	</div>
 							</form>
@@ -564,7 +571,24 @@
 				language: 'es'
 			});
 		</script>
-
+		<script type="text/javascript">
+			function getDate(){
+				hoy = new Date();
+				hora = new Date();
+				var dd = hoy.getDate();
+    			var mm = hoy.getMonth()+1; // Enero es el 0
+			    var yyyy = hoy.getFullYear();
+			    if(dd<10){dd='0'+dd}
+			    if(mm<10){mm='0'+mm}
+			    hoy = dd+"-"+mm+"-"+yyyy;
+				var horas = hora.getHours();
+				var minutos = hora.getMinutes();
+				var segundos = hora.getSeconds();
+				hora = horas+":"+minutos+":"+segundos;
+				document.getElementById("Date/Time Submitted").value = hoy;
+				document.getElementById("Hora").value = hora;
+			}
+		</script>
 
     </body>
 </html
